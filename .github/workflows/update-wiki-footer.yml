@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Setup Node.js
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Ensure this is v3 which uses Node.js 20
+
+      - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-      
-      - name: Checkout repository
-        uses: actions/checkout@v3  # Use the latest version which uses Node.js 20
 
       - name: Calculate stats
         id: calculate-stats
