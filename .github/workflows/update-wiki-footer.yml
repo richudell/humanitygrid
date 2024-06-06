@@ -11,9 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v3  # Use the latest version which uses Node.js 20
 
       - name: Calculate stats
         id: calculate-stats
@@ -28,6 +26,13 @@ jobs:
           echo "COMMIT_COUNT=$COMMIT_COUNT" >> $GITHUB_ENV
           echo "CONTRIBUTORS=$CONTRIBUTORS" >> $GITHUB_ENV
 
+      - name: Clone the Wiki repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git clone https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.wiki.git wiki
+          cd wiki
+
       - name: Update wiki footer
         env:
           FILE_COUNT: ${{ env.FILE_COUNT }}
@@ -41,16 +46,15 @@ jobs:
           FOOTER+="* Total Commits: $COMMIT_COUNT\n"
           FOOTER+="* Contributors: $CONTRIBUTORS\n"
 
-          echo -e "$FOOTER" > wiki-footer.md
+          echo -e "$FOOTER" > wiki/Footer.md
 
       - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd wiki
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git clone https://github.com/${{ github.repository }}.wiki.git
-          cd $(basename ${{ github.repository }}).wiki
-
-          cp ../wiki-footer.md Footer.md
 
           git add Footer.md
           git commit -m "Update wiki footer with latest stats"
