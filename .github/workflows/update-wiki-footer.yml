@@ -16,7 +16,7 @@ jobs:
           node-version: '20'
 
       - name: Checkout repository
-        uses: actions/checkout@v3  # Ensure this is v3 which uses Node.js 20
+        uses: actions/checkout@v3
 
       - name: Calculate stats
         id: calculate-stats
@@ -36,10 +36,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git wiki
+          ls -al
           cd wiki
-
-      - name: Verify wiki directory
-        run: ls -al wiki
+          ls -al
 
       - name: Update wiki footer
         env:
@@ -55,15 +54,14 @@ jobs:
           FOOTER+="* Contributors: $CONTRIBUTORS\n"
 
           echo -e "$FOOTER" > wiki/Footer.md
-
-      - name: Verify Footer.md creation
-        run: ls -al wiki
+          ls -al wiki
 
       - name: Commit and push changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd wiki
+          ls -al
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
