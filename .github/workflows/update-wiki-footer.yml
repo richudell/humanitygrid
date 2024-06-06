@@ -46,7 +46,7 @@ jobs:
           FOOTER+="* Total Commits: $COMMIT_COUNT\n"
           FOOTER+="* Contributors: $CONTRIBUTORS\n"
 
-          echo -e "$FOOTER" > wiki/Footer.md
+          echo -e "$FOOTER" > Footer.md
 
       - name: Commit and push changes
         env:
