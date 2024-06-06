@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "J+QGLl02sxytpKRMVaIC2Q8tpVPYxY+zZ1lAmgv8WkRPjEz/20ZM5R809+MX0qrlNUbxh0o0SJmuiBKjq07SWg==",
+  "success": true,
+  "projectFilePath": "C:\\reu\\HumanityGrid\\HumanityGrid\\HumanityGrid.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rudell\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\rudell\\.nuget\\packages\\xunit.assert\\2.8.1\\xunit.assert.2.8.1.nupkg.sha512",
+    "C:\\Users\\rudell\\.nuget\\packages\\xunit.extensibility.core\\2.8.1\\xunit.extensibility.core.2.8.1.nupkg.sha512"
+  ],
+  "logs": []
+}

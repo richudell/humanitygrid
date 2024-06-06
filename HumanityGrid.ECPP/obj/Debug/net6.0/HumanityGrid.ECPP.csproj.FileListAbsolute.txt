@@ -1,0 +1,12 @@
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\HumanityGrid.ECPP.csproj.AssemblyReference.cache
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\HumanityGrid.ECPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\HumanityGrid.ECPP.AssemblyInfoInputs.cache
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\HumanityGrid.ECPP.AssemblyInfo.cs
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\HumanityGrid.ECPP.csproj.CoreCompileInputs.cache
+C:\reu\HumanityGrid\HumanityGrid.ECPP\bin\Debug\net6.0\HumanityGrid.ECPP.deps.json
+C:\reu\HumanityGrid\HumanityGrid.ECPP\bin\Debug\net6.0\HumanityGrid.ECPP.dll
+C:\reu\HumanityGrid\HumanityGrid.ECPP\bin\Debug\net6.0\HumanityGrid.ECPP.pdb
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\HumanityGrid.ECPP.dll
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\refint\HumanityGrid.ECPP.dll
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\HumanityGrid.ECPP.pdb
+C:\reu\HumanityGrid\HumanityGrid.ECPP\obj\Debug\net6.0\ref\HumanityGrid.ECPP.dll
