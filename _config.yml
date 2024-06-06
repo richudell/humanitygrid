@@ -1,0 +1,7 @@
+title: HumanityGrid
+description: "HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges."
+baseurl: "/humanitygrid"
+url: "https://richudell.github.io"
+theme: minima
+
+markdown: kramdown
