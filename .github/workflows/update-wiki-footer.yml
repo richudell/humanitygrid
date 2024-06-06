@@ -1,0 +1,61 @@
+name: Update Wiki Footer
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  update-footer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Calculate stats
+        run: |
+          FILE_COUNT=$(find . -type f | wc -l)
+          LINE_COUNT=$(find . -type f -name "*.cs" -exec wc -l {} + | awk '{s+=$1} END {print s}')
+          COMMIT_COUNT=$(git rev-list --count HEAD)
+          CONTRIBUTORS=$(git shortlog -sn | wc -l)
+
+          echo "File Count: $FILE_COUNT"
+          echo "Line Count: $LINE_COUNT"
+          echo "Commit Count: $COMMIT_COUNT"
+          echo "Contributors: $CONTRIBUTORS"
+
+          echo "::set-output name=file_count::$FILE_COUNT"
+          echo "::set-output name=line_count::$LINE_COUNT"
+          echo "::set-output name=commit_count::$commit_count"
+          echo "::set-output name=contributors::$CONTRIBUTORS"
+
+      - name: Update wiki footer
+        env:
+          FILE_COUNT: ${{ steps.calculate-stats.outputs.file_count }}
+          LINE_COUNT: ${{ steps.calculate-stats.outputs.line_count }}
+          COMMIT_COUNT: ${{ steps.calculate-stats.outputs.commit_count }}
+          CONTRIBUTORS: ${{ steps.calculate-stats.outputs.contributors }}
+        run: |
+          FOOTER="## Project Stats\n\n"
+          FOOTER+="* Total Files: $FILE_COUNT\n"
+          FOOTER+="* Total Lines of Code: $LINE_COUNT\n"
+          FOOTER+="* Total Commits: $COMMIT_COUNT\n"
+          FOOTER+="* Contributors: $CONTRIBUTORS\n"
+
+          echo -e "$FOOTER" > wiki-footer.md
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git clone https://github.com/${{ github.repository }}.wiki.git
+          cd ${{ github.repository }}.wiki
+
+          cp ../wiki-footer.md Footer.md
+
+          git add Footer.md
+          git commit -m "Update wiki footer with latest stats"
+          git push
