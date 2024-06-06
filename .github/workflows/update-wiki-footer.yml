@@ -16,28 +16,24 @@ jobs:
           fetch-depth: 0
 
       - name: Calculate stats
+        id: calculate-stats
         run: |
           FILE_COUNT=$(find . -type f | wc -l)
           LINE_COUNT=$(find . -type f -name "*.cs" -exec wc -l {} + | awk '{s+=$1} END {print s}')
           COMMIT_COUNT=$(git rev-list --count HEAD)
           CONTRIBUTORS=$(git shortlog -sn | wc -l)
 
-          echo "File Count: $FILE_COUNT"
-          echo "Line Count: $LINE_COUNT"
-          echo "Commit Count: $COMMIT_COUNT"
-          echo "Contributors: $CONTRIBUTORS"
-
-          echo "::set-output name=file_count::$FILE_COUNT"
-          echo "::set-output name=line_count::$LINE_COUNT"
-          echo "::set-output name=commit_count::$commit_count"
-          echo "::set-output name=contributors::$CONTRIBUTORS"
+          echo "FILE_COUNT=$FILE_COUNT" >> $GITHUB_ENV
+          echo "LINE_COUNT=$LINE_COUNT" >> $GITHUB_ENV
+          echo "COMMIT_COUNT=$COMMIT_COUNT" >> $GITHUB_ENV
+          echo "CONTRIBUTORS=$CONTRIBUTORS" >> $GITHUB_ENV
 
       - name: Update wiki footer
         env:
-          FILE_COUNT: ${{ steps.calculate-stats.outputs.file_count }}
-          LINE_COUNT: ${{ steps.calculate-stats.outputs.line_count }}
-          COMMIT_COUNT: ${{ steps.calculate-stats.outputs.commit_count }}
-          CONTRIBUTORS: ${{ steps.calculate-stats.outputs.contributors }}
+          FILE_COUNT: ${{ env.FILE_COUNT }}
+          LINE_COUNT: ${{ env.LINE_COUNT }}
+          COMMIT_COUNT: ${{ env.COMMIT_COUNT }}
+          CONTRIBUTORS: ${{ env.CONTRIBUTORS }}
         run: |
           FOOTER="## Project Stats\n\n"
           FOOTER+="* Total Files: $FILE_COUNT\n"
@@ -52,7 +48,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git clone https://github.com/${{ github.repository }}.wiki.git
-          cd ${{ github.repository }}.wiki
+          cd $(basename ${{ github.repository }}).wiki
 
           cp ../wiki-footer.md Footer.md
 
