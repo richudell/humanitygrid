@@ -38,6 +38,9 @@ jobs:
           git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.wiki.git wiki
           cd wiki
 
+      - name: Verify wiki directory
+        run: ls -al wiki
+
       - name: Update wiki footer
         env:
           FILE_COUNT: ${{ env.FILE_COUNT }}
@@ -51,7 +54,10 @@ jobs:
           FOOTER+="* Total Commits: $COMMIT_COUNT\n"
           FOOTER+="* Contributors: $CONTRIBUTORS\n"
 
-          echo -e "$FOOTER" > Footer.md
+          echo -e "$FOOTER" > wiki/Footer.md
+
+      - name: Verify Footer.md creation
+        run: ls -al wiki
 
       - name: Commit and push changes
         env:
