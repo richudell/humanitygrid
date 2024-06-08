@@ -176,7 +176,7 @@ Help us grow by sharing Humanity Grid with your network:
 ## Conclusion
 Humanity Grid represents a novel approach to distributed computing, enabling a decentralized, secure, and collaborative environment to solve some of the world’s most pressing challenges. Together, we can build a better future through the power of collective computing.
 
-<div class="highlight">
+<div class="highlight" style="background-color: #003366;">
   <h2>HumanityGrid</h2>
   <p>HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges.</p>
 </div>
