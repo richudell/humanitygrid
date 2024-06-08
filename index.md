@@ -9,7 +9,6 @@ title: Humanity Grid
 ## Our Vision
 Humanity Grid is a pioneering, community-driven platform designed to harness the power of distributed computing and artificial intelligence (AI) to tackle global challenges. By joining forces and leveraging the collective power of everyday devices worldwide, we aim to provide scalable, redundant, and secure solutions for complex problems that require immense computational resources.
 
-
 <!-- Google Tag Manager -->
 <script>
 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -176,11 +175,6 @@ Help us grow by sharing Humanity Grid with your network:
 
 ## Conclusion
 Humanity Grid represents a novel approach to distributed computing, enabling a decentralized, secure, and collaborative environment to solve some of the world’s most pressing challenges. Together, we can build a better future through the power of collective computing.
-
-<div class="highlight">
-  <h2>HumanityGrid</h2>
-  <p>HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges.</p>
-</div>
 
 ---
 
