@@ -1,3 +1,7 @@
+---
+title: Humanity Grid
+---
+
 ![Humanity Grid](images/banner.png)
 
 # Welcome to Humanity Grid
@@ -66,6 +70,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: center;
     margin: 2em 0;
     border-radius: 8px;
+  }
+  .highlight h2, .highlight p {
+    color: #fff;
   }
   .consent-banner {
     position: fixed;
