@@ -1,7 +1,3 @@
----
-title: Humanity Grid
----
-
 ![Humanity Grid](images/banner.png)
 
 # Welcome to Humanity Grid
