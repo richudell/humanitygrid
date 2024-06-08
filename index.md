@@ -65,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <p>Your input is invaluable in shaping the future of Humanity Grid. Here’s how you can contribute:</p>
   <ul>
     <li><strong>Join Our Forum:</strong> Coming soon!!</li>
-    <li><strong>Submit Feedback:</strong> <a href="feedback.md">Feedback Form</a></li>
+    <li><strong>Submit Feedback:</strong> <a href="feedback.html">Feedback Form</a></li>
     <li><strong>Participate in Discussions:</strong> Engage with us on our social media channels.</li>
   </ul>
 
