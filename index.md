@@ -22,127 +22,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- Consent Banner HTML and CSS -->
+<!-- Consent Banner HTML -->
 <div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite">
   <p>We use cookies to ensure you get the best experience on our website. By continuing to use this site, you consent to our use of cookies.</p>
   <button onclick="acceptConsent()">Accept</button>
 </div>
 
-<style>
-  body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  header {
-    background: linear-gradient(90deg, #1c92d2, #f2fcfe);
-    color: white;
-    padding: 2em 0;
-    text-align: center;
-  }
-  header img {
-    max-width: 100%;
-    height: auto;
-  }
-  h1 {
-    font-size: 2.5em;
-    margin: 0.5em 0;
-  }
-  h2 {
-    font-size: 2em;
-    color: #1c92d2;
-  }
-  p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #111; /* Increased contrast */
-    margin: 1em 0; /* Added margin for better spacing */
-  }
-  a {
-    color: #1c92d2;
-  }
-  a:focus, button:focus {
-    outline: 3px solid #1c92d2;
-  }
-  .highlight {
-    background-color: #004080;
-    color: white;
-    padding: 2em;
-    text-align: center;
-    margin: 2em 0;
-    border-radius: 8px;
-  }
-  .highlight h2, .highlight p {
-    color: #ffffff;
-  }
-  .consent-banner {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    z-index: 1000;
-    display: none;
-  }
-  .consent-banner button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 10px;
-  }
-  .content {
-    flex: 1;
-    padding: 20px;
-  }
-  footer {
-    background: #1c92d2;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-    width: 100%;
-  }
-</style>
+<!-- Link to external CSS file -->
+<link rel="stylesheet" href="styles.css">
 
 <header>
   <img src="images/banner.png" alt="Humanity Grid Banner">
   <h1>Welcome to Humanity Grid</h1>
 </header>
 
-<!-- GridHero Counter and Consent Banner JavaScript -->
-<script>
-  function acceptConsent() {
-    localStorage.setItem('consent', 'true');
-    document.getElementById('consent-banner').style.display = 'none';
-  }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var consentBanner = document.getElementById('consent-banner');
-    var consent = localStorage.getItem('consent');
-    if (!consent) {
-      consentBanner.style.display = 'block';
-    }
-
-    var gridHeroesElement = document.getElementById('gridHeroCount');
-    if (gridHeroesElement) {
-      var gridHeroCount = localStorage.getItem('gridHeroCount') || 0;
-      gridHeroCount++;
-      localStorage.setItem('gridHeroCount', gridHeroCount);
-      gridHeroesElement.innerText = 'Total GridHeroes: ' + gridHeroCount;
-      if (gridHeroCount % 100 === 0) {
-        alert('Congratulations! You are the ' + gridHeroCount + 'th GridHero to Humanity Grid!');
-      }
-    }
-  });
-</script>
 <p id="gridHeroCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading GridHero count...</p>
 
 <div class="content">
@@ -204,3 +97,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <footer>
   <p>&copy; 2024 Humanity Grid. All rights reserved.</p>
 </footer>
+
+<!-- Link to external JS file -->
+<script src="scripts.js"></script>
