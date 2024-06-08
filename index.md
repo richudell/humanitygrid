@@ -39,29 +39,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background: linear-gradient(90deg, #1c92d2, #f2fcfe);
     color: white;
     padding: 2em 0;
-    text-align: center;
+    text-align: center.
   }
   header img {
     max-width: 100%;
-    height: auto;
+    height: auto.
   }
   h1 {
     font-size: 2.5em;
-    margin: 0.5em 0;
+    margin: 0.5em 0.
   }
   h2 {
     font-size: 2em;
-    color: #1c92d2;
+    color: #1c92d2.
   }
   p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.6.
   }
   a {
-    color: #1c92d2;
+    color: #1c92d2.
   }
   a:focus, button:focus {
-    outline: 3px solid #1c92d2;
+    outline: 3px solid #1c92d2.
   }
   .highlight {
     background-color: #004080;
@@ -69,10 +69,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 2em;
     text-align: center;
     margin: 2em 0;
-    border-radius: 8px;
+    border-radius: 8px.
   }
   .highlight h2, .highlight p {
-    color: #ffffff;
+    color: #ffffff.
   }
   .consent-banner {
     position: fixed;
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: center;
     padding: 1em;
     z-index: 1000;
-    display: none;
+    display: none.
   }
   .consent-banner button {
     background-color: #4CAF50;
@@ -91,7 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 10px.
   }
   footer {
     background: #1c92d2;
@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 1em 0;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 0.
   }
 </style>
 
@@ -120,7 +120,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var consentBanner = document.getElementById('consent-banner');
     var consent = localStorage.getItem('consent');
     if (!consent) {
-      consentBanner.style.display = 'block';
+      consentBanner.style.display = 'block'.
     }
 
     var gridHeroesElement = document.getElementById('gridHeroCount');
@@ -137,7 +137,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   function acceptConsent() {
     localStorage.setItem('consent', 'true');
-    document.getElementById('consent-banner').style.display = 'none';
+    document.getElementById('consent-banner').style.display = 'none'.
   }
 </script>
 <p id="gridHeroCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading GridHero count...</p>
@@ -165,7 +165,7 @@ This is a ground-floor opportunity to be part of something transformative. Here�
 ### Contribute Ideas and Feedback
 Your input is invaluable in shaping the future of Humanity Grid. Here’s how you can contribute:
 - **Join Our Forum:** [Link to the forum]
-- **Submit Feedback:** [Link to feedback form]
+- **Submit Feedback:** [Feedback Form](feedback.md)
 - **Participate in Discussions:** Engage with us on our social media channels.
 
 ### Spread the Word
@@ -175,6 +175,11 @@ Help us grow by sharing Humanity Grid with your network:
 
 ## Conclusion
 Humanity Grid represents a novel approach to distributed computing, enabling a decentralized, secure, and collaborative environment to solve some of the world’s most pressing challenges. Together, we can build a better future through the power of collective computing.
+
+<div class="highlight">
+  <h2>HumanityGrid</h2>
+  <p>HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges.</p>
+</div>
 
 ---
 
