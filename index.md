@@ -53,6 +53,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-size: 1.2em;
     line-height: 1.6;
   }
+  a {
+    color: #1c92d2;
+  }
+  a:focus, button:focus {
+    outline: 3px solid #1c92d2;
+  }
+  .highlight {
+    background-color: #1c92d2;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    margin: 2em 0;
+    border-radius: 8px;
+  }
   .consent-banner {
     position: fixed;
     bottom: 0;
@@ -84,12 +98,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style>
 
 <header>
-  <img src="images/banner.png" alt="Humanity Grid">
+  <img src="images/banner.png" alt="Humanity Grid Banner">
   <h1>Welcome to Humanity Grid</h1>
 </header>
 
-<div class="consent-banner" id="consent-banner">
-  We use cookies to ensure you get the best experience on our website. By continuing to use this site, you consent to our use of cookies.
+<div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite">
+  <p>We use cookies to ensure you get the best experience on our website. By continuing to use this site, you consent to our use of cookies.</p>
   <button onclick="acceptConsent()">Accept</button>
 </div>
 
@@ -154,6 +168,11 @@ Help us grow by sharing Humanity Grid with your network:
 
 ## Conclusion
 Humanity Grid represents a novel approach to distributed computing, enabling a decentralized, secure, and collaborative environment to solve some of the world’s most pressing challenges. Together, we can build a better future through the power of collective computing.
+
+<div class="highlight">
+  <h2>HumanityGrid</h2>
+  <p>HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges.</p>
+</div>
 
 ---
 
