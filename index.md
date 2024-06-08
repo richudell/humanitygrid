@@ -144,50 +144,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p id="gridHeroCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading GridHero count...</p>
 
 <div class="content">
-<h2>How It Works</h2>
-<h3>Distributed Network</h3>
-<p>Devices such as smartphones, tablets, and computers join our global network, sharing their idle processing power. Together, we form a powerful, decentralized computing grid capable of tackling a wide range of tasks.</p>
+  <h2>How It Works</h2>
+  <h3>Distributed Network</h3>
+  <p>Devices such as smartphones, tablets, and computers join our global network, sharing their idle processing power. Together, we form a powerful, decentralized computing grid capable of tackling a wide range of tasks.</p>
 
-<h3>Redundant Data Storage</h3>
-<p>Inspired by RAID 5, we store data with redundancy across multiple devices to ensure reliability and fault tolerance. This approach enhances data security and availability, making our network resilient to individual device failures.</p>
+  <h3>Redundant Data Storage</h3>
+  <p>Inspired by RAID 5, we store data with redundancy across multiple devices to ensure reliability and fault tolerance. This approach enhances data security and availability, making our network resilient to individual device failures.</p>
 
-<h3>Web 3.0 Integration</h3>
-<p>Utilizing blockchain technology and smart contracts, Humanity Grid manages and verifies transactions, ensuring transparency and security within the network. This integration supports a decentralized and trustless environment, where participants can confidently contribute and collaborate.</p>
+  <h3>Web 3.0 Integration</h3>
+  <p>Utilizing blockchain technology and smart contracts, Humanity Grid manages and verifies transactions, ensuring transparency and security within the network. This integration supports a decentralized and trustless environment, where participants can confidently contribute and collaborate.</p>
 
-<h2>Key Features</h2>
-<ul>
-  <li><strong>Accessibility:</strong> Everyone is welcome to participate, regardless of technical background or resources. Your device’s idle processing power can make a difference.</li>
-  <li><strong>Community-Driven:</strong> Our platform is open-source and collaborative, inviting innovation from developers, researchers, and tech enthusiasts. Your input is crucial for our continuous improvement and expansion.</li>
-  <li><strong>Scalable Solutions:</strong> Beyond initial tasks like prime number calculations, our platform can expand to address various scientific, medical, and environmental challenges.</li>
-  <li><strong>Incentives:</strong> Participants earn tokens for their contributions, promoting active involvement and rewarding participation.</li>
-</ul>
+  <h2>Key Features</h2>
+  <ul>
+    <li><strong>Accessibility:</strong> Everyone is welcome to participate, regardless of technical background or resources. Your device’s idle processing power can make a difference.</li>
+    <li><strong>Community-Driven:</strong> Our platform is open-source and collaborative, inviting innovation from developers, researchers, and tech enthusiasts. Your input is crucial for our continuous improvement and expansion.</li>
+    <li><strong>Scalable Solutions:</strong> Beyond initial tasks like prime number calculations, our platform can expand to address various scientific, medical, and environmental challenges.</li>
+    <li><strong>Incentives:</strong> Participants earn tokens for their contributions, promoting active involvement and rewarding participation.</li>
+  </ul>
 
-<h2>Join the Movement</h2>
-<h3>Shape the Future</h3>
-<p>This is a ground-floor opportunity to be part of something transformative. Here’s how you can get involved:</p>
+  <h2>Join the Movement</h2>
+  <h3>Shape the Future</h3>
+  <p>This is a ground-floor opportunity to be part of something transformative. Here’s how you can get involved:</p>
 
-<h3>Contribute Ideas and Feedback</h3>
-<p>Your input is invaluable in shaping the future of Humanity Grid. Here’s how you can contribute:</p>
-<ul>
-  <li><strong>Join Our Forum:</strong> Coming soon!!</li>
-  <li><strong>Submit Feedback:</strong> <a href="feedback.md">Feedback Form</a></li>
-  <li><strong>Participate in Discussions:</strong> Engage with us on our social media channels.</li>
-</ul>
+  <h3>Contribute Ideas and Feedback</h3>
+  <p>Your input is invaluable in shaping the future of Humanity Grid. Here’s how you can contribute:</p>
+  <ul>
+    <li><strong>Join Our Forum:</strong> Coming soon!!</li>
+    <li><strong>Submit Feedback:</strong> <a href="feedback.md">Feedback Form</a></li>
+    <li><strong>Participate in Discussions:</strong> Engage with us on our social media channels.</li>
+  </ul>
 
-<h3>Spread the Word</h3>
-<p>Help us grow by sharing Humanity Grid with your network:</p>
-<ul>
-  <li><strong>Share on Social Media:</strong> Use the hashtag #HumanityGrid and #GridHeroes and tag us in your posts.</li>
-  <li><strong>Invite Friends:</strong> Send them to our website to learn more and join.</li>
-</ul>
+  <h3>Spread the Word</h3>
+  <p>Help us grow by sharing Humanity Grid with your network:</p>
+  <ul>
+    <li><strong>Share on Social Media:</strong> Use the hashtag #HumanityGrid and #GridHeroes and tag us in your posts.</li>
+    <li><strong>Invite Friends:</strong> Send them to our website to learn more and join.</li>
+  </ul>
 
-<h2>Conclusion</h2>
-<p>Humanity Grid represents a novel approach to distributed computing, enabling a decentralized, secure, and collaborative environment to solve some of the world’s most pressing challenges. Together, we can build a better future through the power of collective computing.</p>
+  <h2>Conclusion</h2>
+  <p>Humanity Grid represents a novel approach to distributed computing, enabling a decentralized, secure, and collaborative environment to solve some of the world’s most pressing challenges. Together, we can build a better future through the power of collective computing.</p>
 
-<div class="highlight">
-  <h2>HumanityGrid</h2>
-  <p>HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges.</p>
-</div>
+  <div class="highlight">
+    <h2>HumanityGrid</h2>
+    <p>HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges.</p>
+  </div>
 </div>
 
 ---
