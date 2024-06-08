@@ -59,7 +59,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.8;
+    color: #111; /* Increased contrast */
+    margin: 1em 0; /* Added margin for better spacing */
   }
   a {
     color: #1c92d2;
