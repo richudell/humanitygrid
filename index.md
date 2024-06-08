@@ -27,6 +27,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager (noscript) -->
 
 <!-- Consent Banner HTML and CSS -->
+<div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite">
+  <p>We use cookies to ensure you get the best experience on our website. By continuing to use this site, you consent to our use of cookies.</p>
+  <button onclick="acceptConsent()">Accept</button>
+</div>
+
 <style>
   body {
     font-family: 'Roboto', sans-serif;
@@ -39,29 +44,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background: linear-gradient(90deg, #1c92d2, #f2fcfe);
     color: white;
     padding: 2em 0;
-    text-align: center.
+    text-align: center;
   }
   header img {
     max-width: 100%;
-    height: auto.
+    height: auto;
   }
   h1 {
     font-size: 2.5em;
-    margin: 0.5em 0.
+    margin: 0.5em 0;
   }
   h2 {
     font-size: 2em;
-    color: #1c92d2.
+    color: #1c92d2;
   }
   p {
     font-size: 1.2em;
-    line-height: 1.6.
+    line-height: 1.6;
   }
   a {
-    color: #1c92d2.
+    color: #1c92d2;
   }
   a:focus, button:focus {
-    outline: 3px solid #1c92d2.
+    outline: 3px solid #1c92d2;
   }
   .highlight {
     background-color: #004080;
@@ -69,10 +74,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 2em;
     text-align: center;
     margin: 2em 0;
-    border-radius: 8px.
+    border-radius: 8px;
   }
   .highlight h2, .highlight p {
-    color: #ffffff.
+    color: #ffffff;
   }
   .consent-banner {
     position: fixed;
@@ -83,7 +88,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: center;
     padding: 1em;
     z-index: 1000;
-    display: none.
+    display: none;
   }
   .consent-banner button {
     background-color: #4CAF50;
@@ -91,7 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-left: 10px.
+    margin-left: 10px;
   }
   footer {
     background: #1c92d2;
@@ -100,19 +105,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 1em 0;
     position: fixed;
     width: 100%;
-    bottom: 0.
+    bottom: 0;
   }
 </style>
-
-<header>
-  <img src="images/banner.png" alt="Humanity Grid Banner">
-  <h1>Welcome to Humanity Grid</h1>
-</header>
-
-<div class="consent-banner" id="consent-banner" role="dialog" aria-live="polite">
-  <p>We use cookies to ensure you get the best experience on our website. By continuing to use this site, you consent to our use of cookies.</p>
-  <button onclick="acceptConsent()">Accept</button>
-</div>
 
 <!-- GridHero Counter and Consent Banner JavaScript -->
 <script>
@@ -120,7 +115,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var consentBanner = document.getElementById('consent-banner');
     var consent = localStorage.getItem('consent');
     if (!consent) {
-      consentBanner.style.display = 'block'.
+      consentBanner.style.display = 'block';
     }
 
     var gridHeroesElement = document.getElementById('gridHeroCount');
@@ -137,7 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   function acceptConsent() {
     localStorage.setItem('consent', 'true');
-    document.getElementById('consent-banner').style.display = 'none'.
+    document.getElementById('consent-banner').style.display = 'none';
   }
 </script>
 <p id="gridHeroCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading GridHero count...</p>
