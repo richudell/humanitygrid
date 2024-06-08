@@ -43,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   header img {
     max-width: 100%;
-    height: auto;
+    height: auto.
   }
   h1 {
     font-size: 2.5em;
@@ -55,13 +55,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   p {
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.6.
   }
   a {
-    color: #1c92d2;
+    color: #1c92d2.
   }
   a:focus, button:focus {
-    outline: 3px solid #1c92d2;
+    outline: 3px solid #1c92d2.
   }
   .highlight {
     background-color: #106ba3;
@@ -69,10 +69,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 2em;
     text-align: center;
     margin: 2em 0;
-    border-radius: 8px;
+    border-radius: 8px.
   }
   .highlight h2, .highlight p {
-    color: #ffffff;
+    color: #ffffff.
   }
   .consent-banner {
     position: fixed;
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     text-align: center;
     padding: 1em;
     z-index: 1000;
-    display: none;
+    display: none.
   }
   .consent-banner button {
     background-color: #4CAF50;
@@ -91,7 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 10px.
   }
   footer {
     background: #1c92d2;
@@ -100,7 +100,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 1em 0;
     position: fixed;
     width: 100%;
-    bottom: 0;
+    bottom: 0.
   }
 </style>
 
@@ -114,7 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <button onclick="acceptConsent()">Accept</button>
 </div>
 
-<!-- Visitor Counter and Consent Banner JavaScript -->
+<!-- GridHero Counter and Consent Banner JavaScript -->
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var consentBanner = document.getElementById('consent-banner');
@@ -123,14 +123,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       consentBanner.style.display = 'block';
     }
 
-    var visitorsElement = document.getElementById('visitorCount');
-    if (visitorsElement) {
-      var visitorsCount = localStorage.getItem('visitorCount') || 0;
-      visitorsCount++;
-      localStorage.setItem('visitorCount', visitorsCount);
-      visitorsElement.innerText = 'Total Visitors: ' + visitorsCount;
-      if (visitorsCount % 100 === 0) {
-        alert('Congratulations! You are the ' + visitorsCount + 'th visitor to Humanity Grid!');
+    var gridHeroesElement = document.getElementById('gridHeroCount');
+    if (gridHeroesElement) {
+      var gridHeroCount = localStorage.getItem('gridHeroCount') || 0;
+      gridHeroCount++;
+      localStorage.setItem('gridHeroCount', gridHeroCount);
+      gridHeroesElement.innerText = 'Total GridHeroes: ' + gridHeroCount;
+      if (gridHeroCount % 100 === 0) {
+        alert('Congratulations! You are the ' + gridHeroCount + 'th GridHero to Humanity Grid!');
       }
     }
   });
@@ -140,7 +140,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     document.getElementById('consent-banner').style.display = 'none';
   }
 </script>
-<p id="visitorCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading visitor count...</p>
+<p id="gridHeroCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading GridHero count...</p>
 
 ## How It Works
 ### Distributed Network
