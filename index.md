@@ -164,7 +164,7 @@ This is a ground-floor opportunity to be part of something transformative. Hereâ
 
 ### Contribute Ideas and Feedback
 Your input is invaluable in shaping the future of Humanity Grid. Hereâ€™s how you can contribute:
-- **Join Our Forum:** [Link to the forum]
+- **Join Our Forum:** Coming soon!!
 - **Submit Feedback:** [Feedback Form](feedback.md)
 - **Participate in Discussions:** Engage with us on our social media channels.
 
