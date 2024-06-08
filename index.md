@@ -109,8 +109,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 </style>
 
+<header>
+  <img src="images/banner.png" alt="Humanity Grid Banner">
+  <h1>Welcome to Humanity Grid</h1>
+</header>
+
 <!-- GridHero Counter and Consent Banner JavaScript -->
 <script>
+  function acceptConsent() {
+    localStorage.setItem('consent', 'true');
+    document.getElementById('consent-banner').style.display = 'none';
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
     var consentBanner = document.getElementById('consent-banner');
     var consent = localStorage.getItem('consent');
@@ -129,11 +139,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     }
   });
-
-  function acceptConsent() {
-    localStorage.setItem('consent', 'true');
-    document.getElementById('consent-banner').style.display = 'none';
-  }
 </script>
 <p id="gridHeroCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading GridHero count...</p>
 
