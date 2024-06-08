@@ -64,7 +64,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     outline: 3px solid #1c92d2;
   }
   .highlight {
-    background-color: #1c92d2;
+    background-color: #106ba3;
     color: white;
     padding: 2em;
     text-align: center;
@@ -72,7 +72,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border-radius: 8px;
   }
   .highlight h2, .highlight p {
-    color: #fff;
+    color: #ffffff;
   }
   .consent-banner {
     position: fixed;
