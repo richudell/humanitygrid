@@ -39,6 +39,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   header {
     background: linear-gradient(90deg, #1c92d2, #f2fcfe);
@@ -103,9 +106,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: fixed;
-    width: 100%;
+    position: sticky;
     bottom: 0;
+    width: 100%;
+    margin-top: auto;
   }
 </style>
 
