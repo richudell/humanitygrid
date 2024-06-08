@@ -101,15 +101,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     cursor: pointer;
     margin-left: 10px;
   }
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
   footer {
     background: #1c92d2;
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: sticky;
-    bottom: 0;
     width: 100%;
-    margin-top: auto;
   }
 </style>
 
@@ -146,6 +147,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <p id="gridHeroCount" style="text-align: center; font-size: 0.9em; color: gray;">Loading GridHero count...</p>
 
+<div class="content">
 ## How It Works
 ### Distributed Network
 Devices such as smartphones, tablets, and computers join our global network, sharing their idle processing power. Together, we form a powerful, decentralized computing grid capable of tackling a wide range of tasks.
@@ -183,6 +185,7 @@ Humanity Grid represents a novel approach to distributed computing, enabling a d
 <div class="highlight" style="background-color: #003366;">
   <h2>HumanityGrid</h2>
   <p>HumanityGrid is a community-driven platform leveraging distributed computing and AI to solve global challenges.</p>
+</div>
 </div>
 
 ---
